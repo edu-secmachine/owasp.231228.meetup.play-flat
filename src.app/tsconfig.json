@@ -1,0 +1,28 @@
+{
+  "extends": [
+    "../shared.src.web/tsconfig.common.json",
+    "./tsconfig.paths.json"
+  ],
+  "compilerOptions": {
+    "rootDir": "./",
+    "outDir": "../_out",
+    // "inlineSources": true,
+    "baseUrl": "./",
+    "tsBuildInfoFile": "../webapp.tsconfig.tsbuildinfo",
+    // "esModuleInterop": true,
+    // "noFallthroughCasesInSwitch": true,
+    // "isolatedModules": true,
+    // "jsxFactory": "React.createElement",
+    // "jsxFragmentFactory": "React.Fragment",
+    // "declaration": true,
+  },
+  "include": [
+    "./**/*",
+  ],
+  "exclude": [
+    "./esbuild.script.ts",
+  ],
+  "references": [
+    {"path": "../shared.src.web"}
+  ]
+}

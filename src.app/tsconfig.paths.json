@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "paths": {  // relative to baseUrl (the workspace tsconfig); this will override other paths declarations
+      "@/*": ["./*"],
+      "@@shared-web/*": ["../shared.src.web/*"],
+    }
+  }
+}

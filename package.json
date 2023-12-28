@@ -1,11 +1,29 @@
 {
   "name": "231228.meetup.play-flat",
-  "module": "index.ts",
-  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "packages-local/116",
+    "src.app"
+  ],
+  "scripts": {
+    "in": "bun install --backend=copyfile",
+    "serve:app": "NODE_ENV=DEV BROWSER=none bun web-dev-server --watch --config src.app/web-dev-server.config.mjs"
+  },
+  "dependencies": {
+  },
   "devDependencies": {
-    "bun-types": "latest"
+    "tslib": "latest",
+    "bun-types": "latest",
+    "@types/node": "20.x",
+    "tsc-alias": "latest",
+    "@web/dev-server": "latest",
+    "@web/dev-server-esbuild": "latest",
+    "esbuild": "latest",
+    "esbuild-vue": "latest",
+    "wireit": "latest"
   },
   "peerDependencies": {
-    "typescript": "^5.0.0"
+    "typescript": "beta"
   }
 }

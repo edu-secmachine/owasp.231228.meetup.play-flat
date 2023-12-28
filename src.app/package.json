@@ -1,0 +1,51 @@
+{
+  "name": "ourpoorapp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "",
+  "scripts": {
+    "in": "bun install --backend=copyfile",
+    "build:ts": "bun tsc",
+    "build:dev": "NODE_ENV=DEV bun --bun esbuild.script.ts  2> ../__dump"
+  },
+  "dependencies": {
+    "116": "link:116"
+  },
+  "peerDependencies": {
+    "@types/react": "18",
+    "react": "18",
+    "react-dom": "18"
+  },
+  "overrides": {
+    "react": "18.x",
+    "react-dom": "18.x",
+    "react-is": "18.x"
+  },
+  "devDependencies": {
+    "@custom-elements-manifest/analyzer": "latest",
+    "@luncheon/esbuild-plugin-gzip": "latest",
+    "@types/esbuild-vue": "latest",
+    "@types/jest": "^27.5.2",
+    "@types/loadicons": "latest",
+    "@types/node": "20.x",
+    "@types/react": "18.x",
+    "@types/react-dom": "18.x",
+    "@types/uuid": "9.x",
+    "@web-types/lit": "latest",
+    "bun-types": "latest",
+    "clean-css": "latest",
+    "esbuild-plugin-minify-html-literals": "latest",
+    "html-minifier": "latest",
+    "tsc-alias": "latest",
+    "tslib": "latest",
+    "typescript": "beta",
+    "workbox-cli": "latest"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  }
+}

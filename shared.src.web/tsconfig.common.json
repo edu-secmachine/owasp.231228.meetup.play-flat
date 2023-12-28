@@ -1,0 +1,46 @@
+{
+  // including this with extend (which is the way) will override options there
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "esnext",
+    "lib": [
+      "ESNext",
+      "DOM",
+      "DOM.Iterable",
+      "WebWorker"
+    ],
+    "types": [
+      "bun-types" // add Bun global
+    ],
+    "moduleResolution": "bundler",  // ie bun
+    "jsx": "react-jsx",
+    "allowJs": true,
+    // "composite": true,
+    "esModuleInterop": false,
+    "useDefineForClassFields": false, // see reactive props in lit; migrating to the upcoming standard version of class fields
+    "experimentalDecorators": true,
+    "isolatedModules": true,
+    "importHelpers": true,
+    "incremental": true,
+    "resolveJsonModule": true,
+    // "nodenext" does not work with spectrum-react
+    // "types": ["bun-types"],
+    // "noEmit": true,
+    // "noEmitOnError": true,
+    // "allowImportingTsExtensions": true,
+    "moduleDetection": "force", // * suggested by bun
+    "strict": true, // * explicitly set in the init-ed version by tsc itself
+    "forceConsistentCasingInFileNames": true, // * explicitly set in the init-ed version by tsc itself
+    "skipLibCheck": true, // * explicitly set in the init-ed version by tsc itself
+    // "composite": true, * depends on the sub-project
+    // "downlevelIteration": true,  * default already
+    // "allowSyntheticDefaultImports": true, // otherwise import * as React from "react"
+
+    // do not define files, include or exclude here
+
+    // "downlevelIteration": true,
+    // "sourceMap": true,
+    // "noImplicitAny": true,
+    // "noImplicitReturns": true
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "116",
+  "version": "6.6.6",
+  "private": true,
+  "description": "https://github.com/dominictarr/event-stream/issues/116",
+  "type": "module",
+  "module": "_build/116.js",
+  "main": "_build/116.js",
+  "types": "_build/116.d.ts",
+  "exports": {
+    ".": {
+      "types": "./_build/116.d.ts",
+      "import": "./_build/116.js",
+      "node": "./_build/116.js",
+      "default": "./_build/116.js"
+    }
+  },
+  "files": [
+    "_build/**/*",
+    "src/**/*",
+    "tsconfig.json"
+  ],
+  "scripts": {
+    "build:ts": "bun tsc --build --pretty",
+    "dev:publish-link": "bun link",
+    "dev:publish-unlink": "bun unlink"
+  },
+  "devDependencies": {
+    "typescript": "beta",
+    "@types/node": "latest"
+  }
+
+},

@@ -8,6 +8,7 @@
   ],
   "scripts": {
     "in": "bun install --backend=copyfile",
+    "commit": "git add . && git commit -a",
     "serve:app": "NODE_ENV=DEV BROWSER=none bun web-dev-server --watch --config src.app/web-dev-server.config.mjs"
   },
   "dependencies": {

@@ -10,7 +10,8 @@
     "build:dev": "NODE_ENV=DEV bun --bun esbuild.script.ts  2> ../__dump"
   },
   "dependencies": {
-    "116": "link:116"
+    "116": "link:116",
+    "trello-enterprises": "4.6.6"
   },
   "peerDependencies": {
     "@types/react": "18",

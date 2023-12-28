@@ -1,15 +1,25 @@
 # 231228.meetup.play-flat
 
-To install dependencies:
+## Warning! 
+This material deliberately contains (broken) malicious code and will pull (a) vulnerable dep(s) -- since it was used for demo purposes at a supply chain security related presentation.
+See show notes:  
+https://www.notion.so/owasphu/OWASP-HU-231228-Rogue-deps-4789fbd40e4a4f21be8afa6ca9aada15  
 
-```bash
-bun install
-```
+_Do not run this code!!_ 🪆 
 
-To run:
+### Rogue like parts
+* 116 in local packages contains code resembling  
+  https://github.com/dominictarr/event-stream/issues/116
+* Imported 'trello-enterprises@4.6.6'  
+  https://socket.dev/npm/package/trello-enterprises/files/4.6.6/a.js
 
-```bash
-bun run index.ts
-```
+## Outputs
+Date: 23DEC28
 
-This project was created using `bun init` in bun v1.0.18. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+### Socket.dev 
+(free plan)
+![](shared.assets/socket.report.38ba3818.png)
+
+### Sonarcloud
+(not configured, free plan)
+![](shared.assets/sonar.report.38ba3818.png)
